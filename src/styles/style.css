@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --theme-color: #245446;
+  --bg-color: #fff1dc;
+  --contrast-color: #f35328;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: var(--bg-color);
+  font-family: "Asap", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.main-header nav {
+  display: flex;
+  align-items: center;
+  padding: 0 1.725rem;
+  /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4); */
+}
+
+.main-header h1 {
+  font-size: 1.75rem;
+  letter-spacing: 0.115em;
+  padding: 1rem;
+  color: var(--contrast-color);
+}
+
+.main-header button {
+  background-color: var(--bg-color);
+  border: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0.8rem 1.2rem;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.main-header button:hover {
+  color: var(--theme-color);
+}
+
+ul {
+  width: 80%;
+  height: 100px;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.content-container {
+  height: calc(100vh - 100px);
+}

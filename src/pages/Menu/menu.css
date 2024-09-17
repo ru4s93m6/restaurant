@@ -1,0 +1,44 @@
+.menu-container {
+  padding: 2.35rem;
+}
+
+.menu-item {
+  display: flex;
+  gap: 2.5rem;
+  margin: 5ch 0;
+  justify-content: center;
+  min-height: 180px;
+  align-items: center;
+}
+
+.menu-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 550px;
+  gap: 1rem;
+}
+
+.item-info h3 {
+  color: var(--theme-color);
+  font-size: 1.625rem;
+}
+
+.item-info p {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.item-price {
+  font-style: italic;
+}
+
+.menu-item .item-image img {
+  border-radius: 50%;
+  object-fit: cover;
+  transform: scale(1.2);
+}
